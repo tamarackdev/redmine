@@ -22,4 +22,6 @@ Rails.application.configure do
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
+
+  config.secret_key_base = '13997d2dbc45855b334c8c41ee5fe45dcf005d1b9e7e2ca6f726493585844df418ed59d2fac6766a302323f65e02bd160db30d8519d14d549b22177c90c888b6'
 end

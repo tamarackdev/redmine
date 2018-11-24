@@ -15,6 +15,13 @@ gem "mimemagic"
 gem "mail", "~> 2.7.1"
 gem "csv", "~> 1.0.2" if RUBY_VERSION >= "2.3"
 
+
+
+gem "win32-service"
+gem "thin"
+
+
+
 gem "nokogiri", "~> 1.8.0"
 gem "i18n", "~> 0.7.0"
 

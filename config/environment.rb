@@ -10,5 +10,8 @@ if Dir.glob(File.join(vendor_plugins_dir, "*")).any?
   exit 1
 end
 
+ENV['RAILS_ENV'] ||= 'production'
+ENV['RACK_ENV']  ||= 'production'
+
 # Initialize the Rails application
 Rails.application.initialize!
