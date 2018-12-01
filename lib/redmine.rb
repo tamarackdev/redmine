@@ -187,8 +187,6 @@ end
 
 Redmine::MenuManager.map :top_menu do |menu|
   menu.push :home, "https://helpdesk.tamarackidaho.com/projects/it-helpdesk/issues?set_filter=1&tracker_id=1"
-  # menu.push :home, :home_path
-  # menu.push :home, :top_menu, :all_issues, { :controller => 'issues', :action => 'index', :project_id => @project, :set_filter => 1}, :last => true, :caption => :label_issue_all
   menu.push :my_page, { :controller => 'my', :action => 'page' }, :if => Proc.new { User.current.logged? }
   menu.push :projects, { :controller => 'projects', :action => 'index' }, :caption => :label_project_plural
   menu.push :wiki, "https://helpdesk.tamarackidaho.com/projects/it-helpdesk/wiki", :caption => "Wiki"
