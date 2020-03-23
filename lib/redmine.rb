@@ -189,7 +189,7 @@ Redmine::MenuManager.map :top_menu do |menu|
   menu.push :home, "https://helpdesk.tamarackidaho.com/projects/it-helpdesk/issues?set_filter=1&tracker_id=1"
   menu.push :my_page, { :controller => 'my', :action => 'page' }, :if => Proc.new { User.current.logged? }
   menu.push :projects, { :controller => 'projects', :action => 'index' }, :caption => :label_project_plural
-  menu.push :wiki, "https://helpdesk.tamarackidaho.com/projects/it-helpdesk/wiki", :caption => "Wiki"
+  menu.push :wiki, "https://helpdesk.tamarackboise.local/projects/it-helpdesk/wiki", :caption => "Wiki"
   menu.push :administration, { :controller => 'admin', :action => 'index' }, :if => Proc.new { User.current.admin? }, :last => true
   menu.push :help, Redmine::Info.help_url, :last => true
 end
